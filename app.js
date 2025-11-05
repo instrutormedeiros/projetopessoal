@@ -1,4 +1,4 @@
-/* === ARQUIVO app.js (CORREÇÃO DE CRASH) === */
+/* === ARQUIVO app.js (Proteção de Cópia DESATIVADA) === */
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- FUNÇÃO PRINCIPAL DE INICIALIZAÇÃO ---
     function init() {
-        setupProtection();
+        setupProtection(); // Esta função agora está "vazia"
         setupTheme();
         handlePersonalGreeting();
         document.getElementById('total-modules').textContent = totalModules;
@@ -139,11 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('gateBombeiroLastModule', id);
         
         const d = moduleContent[id];
-        
-        // *** CORREÇÃO DO CRASH TYPO ***
-        // Removido o '_' extra de 'note-'_ + id'
         const savedNote = localStorage.getItem('note-' + id) || ''; 
-        
         const categoryColor = getCategoryColor(id);
         
         contentArea.style.opacity = '0';
@@ -320,11 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupNotesListener(id) {
         const notesTextarea = document.getElementById(`notes-module-${id}`);
         if (notesTextarea) {
-            notesTextarea.style.userSelect = 'auto';
-            notesTextarea.style.webkitUserSelect = 'auto';
-            notesTextarea.style.mozUserSelect = 'auto';
-            notesTextarea.style.msUserSelect = 'auto';
-            
+            // As linhas de 'user-select' foram removidas para permitir copiar/colar
             notesTextarea.addEventListener('keyup', () => {
                 localStorage.setItem('note-' + id, notesTextarea.value);
             });
@@ -374,28 +366,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>`;
     }
 
+    // *** CORREÇÃO (Proteção Desativada) ***
+    // A lógica de bloqueio foi comentada.
     function setupProtection() {
-        document.body.style.userSelect = 'none';
-        document.body.style.webkitUserSelect = 'none';
-        document.body.style.mozUserSelect = 'none';
-        document.body.style.msUserSelect = 'none';
-        document.addEventListener('contextmenu', e => e.preventDefault());
-        document.addEventListener('keydown', e => {
-          if (e.ctrlKey || e.metaKey) {
-            if (['c','a','x','v','s','p','u'].includes(e.key.toLowerCase())) e.preventDefault();
-          }
-          if (e.key === 'F12') e.preventDefault();
-          if (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key.toUpperCase())) e.preventDefault();
-          if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
-            e.preventDefault();
-            console.warn('Impressão desativada para proteger o conteúdo.'); 
-          }
-        });
-        document.querySelectorAll('img').forEach(img => {
-          img.draggable = false;
-          img.addEventListener('dragstart', e => e.preventDefault());
-        });
+        // document.body.style.userSelect = 'none';
+        // document.body.style.webkitUserSelect = 'none';
+        // document.body.style.mozUserSelect = 'none';
+        // document.body.style.msUserSelect = 'none';
+        // document.addEventListener('contextmenu', e => e.preventDefault());
+        // document.addEventListener('keydown', e => {
+        //   if (e.ctrlKey || e.metaKey) {
+        //     if (['c','a','x','v','s','p','u'].includes(e.key.toLowerCase())) e.preventDefault();
+        //   }
+        //   if (e.key === 'F12') e.preventDefault();
+        //   if (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key.toUpperCase())) e.preventDefault();
+        //   if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        //     e.preventDefault();
+        //     console.warn('Impressão desativada para proteger o conteúdo.'); 
+        //   }
+        // });
+        // document.querySelectorAll('img').forEach(img => {
+        //   img.draggable = false;
+        //   img.addEventListener('dragstart', e => e.preventDefault());
+        // });
     }
+    // *** FIM DA CORREÇÃO ***
 
     function setupTheme() {
         const isDark = localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -526,15 +521,12 @@ document.addEventListener('DOMContentLoaded', () => {
     return html;
 }
 
-    // --- CORREÇÃO (Request Minimalista) ---
     function updateProgress() {
         const p = (completedModules.length / totalModules) * 100;
         
-        // Atualiza o texto DENTRO do wrapper sticky
         document.getElementById('progress-text').textContent = `${p.toFixed(0)}%`;
         document.getElementById('completed-modules-count').textContent = completedModules.length;
         
-        // Atualiza a barra minimalista DENTRO do wrapper sticky
         const progressBarMinimal = document.getElementById('progress-bar-minimal');
         if (progressBarMinimal) {
             progressBarMinimal.style.width = `${p}%`;
@@ -544,7 +536,6 @@ document.addEventListener('DOMContentLoaded', () => {
         checkAchievements();
         if (totalModules > 0 && completedModules.length === totalModules) showCongratulations();
     }
-    // --- FIM DA CORREÇÃO ---
 
 
     function showCongratulations() {
