@@ -731,144 +731,110 @@ const moduleContent = {
         content: `<h4>35.1 Queimaduras - Classificação por Profundidade:</h4><p>Lesão causada por temperaturas extremas, agentes químicos, eletricidade ou radiação.</p><ul><li>1º Grau: Atinge a epiderme; causa vermelhidão e dor.</li><li>2º Grau: Atinge a epiderme e a derme; forma bolhas e causa dor intensa.</li><li>3º Grau: Atinge todas as camadas da pele; aspecto esbranquiçado ou carbonizado, com pouca ou nenhuma dor.</li></ul><h4>35.2 Conduta Básica em Queimaduras</h4><ul><li>Interromper o processo (ex: resfriar com água corrente).</li><li>Remover roupas que não estejam grudadas e joias.</li><li>NÃO estourar bolhas nem aplicar produtos caseiros (pasta de dente, café).</li></ul><h4>35.3 Lesões Musculoesqueléticas</h4><ul><li>Fratura: Ruptura total ou parcial de um osso (Fechada ou Exposta).</li><li>Luxação: Deslocamento de um osso de sua articulação.</li><li>Entorse: Torção ou distensão de uma articulação, com lesão de ligamentos.</li></ul><p>Conduta: NUNCA tente colocar ossos no lugar. Imobilize a articulação acima e abaixo da lesão e verifique o PMS (Pulso, Movimento, Sensibilidade) antes e depois.</p>` 
     },
     'module36': { 
-    id: "module36", 
-    title: "36. APH: Emergências Clínicas e Estado de Choque", 
-    iconClass: "fas fa-stethoscope", 
-    content: `
-<h3>36.1 O que são Emergências Clínicas</h3>
-<p>São situações em que o paciente apresenta um <strong>agravo interno à saúde</strong>, sem causa traumática externa, que coloca a vida em risco imediato. Ex.: Convulsões, síncope, AVC, infarto, descontrole glicêmico.</p>
+            id: "module36", 
+            title: "36. APH: Emergências Clínicas", 
+            iconClass: "fas fa-stethoscope", 
+            content: `
+            <p>Emergências clínicas são estados graves de saúde que não são causados por traumas externos, mas sim pelo agravamento de doenças ou condições internas do corpo.</p>
 
-<hr>
+            <h4>36.1 Síncope (Desmaio)</h4>
+            <div class="key-concept" style="margin-bottom: 0.5rem;">
+                <h5>Definição de Síncope</h5>
+                <p>A Síncope, ou Desmaio, é a perda abrupta e transitória (momentânea) da consciência e da capacidade de ficar em pé (tônus postural). A recuperação geralmente é rápida e completa.</p>
+                <p>Na maioria dos casos, ocorre por uma diminuição temporária do fluxo sanguíneo para o cérebro.</p>
+            </div>
+            
+            <div class="key-concept" style="margin-bottom: 0.5rem;">
+                <h5>Causas Comuns da Síncope</h5>
+                <p>Qualquer pessoa pode desmaiar. Algumas causas incluem:</p>
+                <ul>
+                    <li>Pressão Baixa (hipotensão), especialmente ao levantar-se rápido.</li>
+                    <li>Hipoglicemia (baixo nível de açúcar no sangue, ex: ficar mais de 4 horas sem comer).</li>
+                    <li>Fatores Ambientais: Calor excessivo ou frio extremo.</li>
+                    <li>Fatores Emocionais: Ansiedade, ataque de pânico, medo extremo (ex: de agulhas) ou dor muito forte.</li>
+                    <li>Problemas Cardíacos: Arritmias ou outras doenças que impedem o bombeamento eficaz do sangue.</li>
+                </ul>
+            </div>
 
-<h3>36.2 Síncope (Desmaio)</h3>
-<p>A síncope é uma <strong>perda rápida e temporária da consciência</strong>, geralmente por redução momentânea do fluxo sanguíneo cerebral.</p>
+            <div class="key-concept">
+                <h5>Conduta na Síncope (O que fazer)</h5>
+                <p>Ao ter a sensação de que vai desmaiar (tonturas, fraqueza, visão embaçada):</p>
+                <ul>
+                    <li>Deitar a vítima no chão e elevar suas pernas acima do nível do coração.</li>
+                    <li>Se não for possível deitar, sente a pessoa e incline o tronco dela para frente, com a cabeça em direção aos joelhos.</li>
+                    <li>Mantenha o ambiente arejado e afaste os curiosos.</li>
+                </ul>
+            </div>
 
-<h4>Causas comuns:</h4>
-<ul>
-    <li>Calor excessivo ou ambiente fechado</li>
-    <li>Longo tempo em pé parado</li>
-    <li>Dor intensa, susto, estresse</li>
-    <li>Hipoglicemia (queda de açúcar no sangue)</li>
-    <li>Desidratação</li>
-</ul>
+            <h4>36.2 Crise Convulsiva</h4>
+            <div class="key-concept" style="margin-bottom: 0.5rem;">
+                <h5>Definição de Convulsão</h5>
+                <p>A convulsão é um distúrbio que se caracteriza pela contratura muscular involuntária (movimentos de "se bater") de todo o corpo ou de parte dele.</p>
+                <p>É provocada por um aumento excessivo e anormal da atividade elétrica no cérebro.</p>
+            </div>
+            
+            <div class="key-concept">
+                <h5>Causas Comuns da Convulsão</h5>
+                <p>As causas prováveis mais comuns incluem:</p>
+                <ul>
+                    <li>Febre alta (principalmente em crianças menores de 5 anos).</li>
+                    <li>Traumatismo craniano (pancadas fortes na cabeça).</li>
+                    <li>Doenças como meningite, tétano ou tumores cerebrais.</li>
+                    <li>Abstinência de álcool ou drogas.</li>
+                    <li>Distúrbios metabólicos, como hipoglicemia severa.</li>
+                </ul>
+            </div>
 
-<h4>Sinais:</h4>
-<ul>
-    <li>Tontura</li>
-    <li>Visão turva ou escurecendo</li>
-    <li>Suor frio</li>
-    <li>Pele pálida</li>
-</ul>
+            <h4>36.3 Epilepsia</h4>
+            <div class="key-concept">
+                <h5>Definição de Epilepsia</h5>
+                <p>A Epilepsia é uma disfunção <strong>crônica</strong> do cérebro (uma neuropatia) que causa descargas elétricas anormais e <strong>recorrentes</strong>.</p>
+                <p><strong>Diferença Chave:</strong> Ter uma única convulsão (ex: por febre) não significa ter epilepsia. A epilepsia é diagnosticada quando a pessoa tem duas ou mais convulsões que se repetem ao longo do tempo.</p>
+            </div>
 
-<h4>Conduta do Socorrista:</h4>
-<ul>
-    <li>Amparar a vítima e deitá-la no chão</li>
-    <li><strong>Elevar as pernas</strong> (melhora retorno sanguíneo ao cérebro)</li>
-    <li>Afrouxar roupas apertadas / abrir ventilação</li>
-    <li>Não oferecer comida ou água imediatamente</li>
-</ul>
+            <h4>36.4 Conduta no Atendimento à Convulsão</h4>
+            <div class="warning-box" style="margin-bottom: 0.5rem;">
+                <h5>O QUE FAZER:</h5>
+                <ol>
+                    <li><strong>Mantenha a calma:</strong> A crise geralmente dura poucos segundos ou minutos.</li>
+                    <li><strong>Proteja a vítima:</strong> Afaste objetos (cadeiras, mesas) e ampare a cabeça da pessoa para evitar que ela se machuque no chão. Se possível, coloque algo macio (almofada, casaco) sob a cabeça.</li>
+                    <li><strong>Lateralize a cabeça:</strong> Vire a cabeça da vítima de lado. Isso evita que ela se afogue (broncoaspire) com a própria saliva ou vômito.</li>
+                    <li><strong>Cronometre a crise:</strong> Se durar mais de 5 minutos, é uma emergência grave e a vítima deve ser levada ao hospital imediatamente.</li>
+                    <li><strong>Acione 192 ou 193:</strong> Especialmente se for a primeira crise da pessoa ou se durar mais de 5 minutos.</li>
+                </ol>
+            </div>
+            
+            <div class="warning-box" style="border-left-color: var(--primary); background-color: #fff5f5;">
+                <h5 style="color: var(--primary-dark);">O QUE NÃO FAZER:</h5>
+                <ul>
+                    <li><strong>NÃO tente conter os movimentos:</strong> Nunca segure os braços ou pernas da vítima.</li>
+                    <li><strong>NÃO puxe a língua:</strong> É um mito. A vítima não engole a língua. Tentar puxá-la pode causar lesões graves na sua mão (mordida) ou na boca da vítima.</li>
+                    <li><strong>NÃO coloque objetos na boca:</strong> Não insira dedos, panos, colheres ou qualquer objeto na boca da vítima. Isso pode quebrar dentes ou causar obstrução.</li>
+                    <li><strong>NÃO dê água ou medicação:</strong> A vítima está inconsciente e pode se afogar.</li>
+                </ul>
+            </div>
 
-<p><strong>Encaminhar ao hospital se:</strong> o desmaio durar mais de 1 minuto, houver dor no peito, falta de ar ou histórico cardíaco.</p>
+            <h4>36.5 Outras Emergências Graves</h4>
+            <div class="key-concept" style="margin-bottom: 0.5rem;">
+                <h5>Infarto Agudo do Miocárdio (IAM)</h5>
+                <p>Popularmente conhecido como ataque cardíaco, é a necrose (morte) de uma parte do músculo do coração (miocárdio) causada pela obstrução de uma artéria que leva sangue até ele.</p>
+            </div>
+            <div class="key-concept">
+                <h5>Acidente Vascular Encefálico (AVE)</h5>
+                <p>Popularmente conhecido como "Derrame", é a interrupção da circulação de sangue no cérebro, causada por um coágulo (AVE Isquêmico) ou pelo rompimento de um vaso (AVE Hemorrágico), levando à morte de células cerebrais.</p>
+            </div>
 
-<hr>
-
-<h3>36.3 Convulsão</h3>
-<p>Convulsão é uma <strong>atividade elétrica anormal do cérebro</strong>, causando movimentos musculares involuntários.</p>
-
-<h4>Sinais Clássicos (Crise Tônico-Clônica):</h4>
-<ul>
-    <li>Queda súbita</li>
-    <li>Corpo rígido → tremores intensos</li>
-    <li>Salivação / possível mordedura da língua</li>
-    <li>Respiração irregular</li>
-    <li>Estado de confusão após a crise (período pós-ictal)</li>
-</ul>
-
-<h4>Conduta Correta:</h4>
-<ul>
-    <li><strong>Proteger a cabeça</strong> da vítima</li>
-    <li><strong>Afastar objetos</strong> ao redor</li>
-    <li><strong>NÃO colocar nada na boca</strong></li>
-    <li><strong>NÃO segurar</strong> os movimentos</li>
-    <li>Aguardar a crise cessar</li>
-</ul>
-
-<p>A maioria das crises dura <strong>30 segundos a 2 minutos</strong>.</p>
-
-<h4>Quando é Gravíssimo (Emergência):</h4>
-<p><strong>Estado de Mal Epiléptico</strong> = convulsão que dura &gt; 5 minutos ou quando há crises repetidas sem recuperação de consciência.</p>
-
-<p><strong>Nesse caso → Acione imediatamente SAMU 192.</strong></p>
-
-<hr>
-
-<h3>36.4 Epilepsia</h3>
-<p>Epilepsia é uma condição em que o paciente apresenta <strong>convulsões recorrentes</strong>. A convulsão é um evento; epilepsia é a doença.</p>
-
-<h4>Gatilhos comuns:</h4>
-<ul>
-    <li>Falta de sono</li>
-    <li>Álcool e drogas</li>
-    <li>Estresse emocional</li>
-    <li>Luzes piscantes em alguns casos</li>
-</ul>
-
-<p>Se o paciente já possui epilepsia e a crise foi igual às anteriores → <strong>Conforto e observação</strong>.</p>
-
-<p>Se foi a primeira crise na vida → <strong>Encaminhar para avaliação médica.</strong></p>
-
-<hr>
-
-<h3>36.5 Acidente Vascular Encefálico (AVE)</h3>
-<p>O <strong>AVE</strong> ocorre quando o fluxo de sangue para parte do cérebro é interrompido.</p>
-
-<h4>Sinais (Protocolo FAST):</h4>
-<ul>
-    <li><strong>Face:</strong> Assimetria na boca ou rosto</li>
-    <li><strong>Braço:</strong> Perda de força em um dos lados</li>
-    <li><strong>Fala:</strong> Dificuldade para falar ou frases confusas</li>
-    <li><strong>Tempo:</strong> Quanto antes o atendimento, maior a chance de recuperação</li>
-</ul>
-
-<p><strong>Conduta:</strong> Chamar SAMU 192 imediatamente.</p>
-
-<hr>
-
-<h3>36.6 Infarto Agudo do Miocárdio (IAM)</h3>
-<p>É a <strong>morte de parte do músculo cardíaco</strong> por falta de oxigênio.</p>
-
-<h4>Sinais:</h4>
-<ul>
-    <li>Dor no peito em aperto, podendo irradiar para braço esquerdo, mandíbula ou costas</li>
-    <li>Suor frio</li>
-    <li>Náuseas</li>
-    <li>Medo de morrer</li>
-</ul>
-
-<p><strong>Conduta:</strong> Acalmar, manter sentado, não deitar, acionar <strong>SAMU 192</strong>.</p>
-
-<hr>
-
-<h3>36.7 Estado de Choque</h3>
-<p><strong>Choque</strong> é quando os tecidos não recebem oxigênio suficiente.</p>
-
-<h4>Sinais Gerais:</h4>
-<ul>
-    <li>Pele pálida, fria e úmida</li>
-    <li>Pulso fraco e acelerado</li>
-    <li>Respiração rápida</li>
-    <li>Confusão ou agitação</li>
-</ul>
-
-<h4>Conduta:</h4>
-<ul>
-    <li>Controlar causa (ex: sangramento)</li>
-    <li>Deitar a vítima e elevar as pernas</li>
-    <li>Manter aquecimento corporal</li>
-    <li>Acionar SAMU 192</li>
-</ul>
-` 
-},
+            <h4>36.6 Tipos de Choque (Falência Circulatória)</h4>
+            <p>O Choque é um estado de falência circulatória onde o oxigênio não chega adequadamente aos tecidos, ameaçando a vida. Os principais tipos são:</p>
+            <ul>
+                <li><strong>Choque Séptico:</strong> Causado por uma infecção generalizada que se espalha pelo sangue.</li>
+                <li><strong>Choque Anafilático:</strong> Causado por uma reação alérgica grave e sistêmica (ex: picada de abelha, remédios, alimentos).</li>
+                <li><strong>Choque Hipovolêmico:</strong> Causado pela perda de grande volume de sangue ou líquidos (ex: hemorragia grave).</li>
+                <li><strong>Choque Cardiogênico:</strong> Ocorre quando o coração falha como bomba (ex: após um infarto) e não consegue bombear o sangue.</li>
+                <li><strong>Choque Neurogênico:</strong> Ocorre por uma falha no sistema nervoso (ex: lesão na medula espinhal).</li>
+            </ul>
+        ` 
+        },
     'module37': { 
         id: "module37", 
         title: "37. APH: Situação com Múltiplas Vítimas (IMV)", 
@@ -1126,6 +1092,7 @@ for (let i = 1; i <= 59; i++) {
     questionSources[`module${i}`] = `module${i}-quiz.js`; 
 
 }
+
 
 
 
