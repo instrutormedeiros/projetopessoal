@@ -731,41 +731,144 @@ const moduleContent = {
         content: `<h4>35.1 Queimaduras - Classificação por Profundidade:</h4><p>Lesão causada por temperaturas extremas, agentes químicos, eletricidade ou radiação.</p><ul><li>1º Grau: Atinge a epiderme; causa vermelhidão e dor.</li><li>2º Grau: Atinge a epiderme e a derme; forma bolhas e causa dor intensa.</li><li>3º Grau: Atinge todas as camadas da pele; aspecto esbranquiçado ou carbonizado, com pouca ou nenhuma dor.</li></ul><h4>35.2 Conduta Básica em Queimaduras</h4><ul><li>Interromper o processo (ex: resfriar com água corrente).</li><li>Remover roupas que não estejam grudadas e joias.</li><li>NÃO estourar bolhas nem aplicar produtos caseiros (pasta de dente, café).</li></ul><h4>35.3 Lesões Musculoesqueléticas</h4><ul><li>Fratura: Ruptura total ou parcial de um osso (Fechada ou Exposta).</li><li>Luxação: Deslocamento de um osso de sua articulação.</li><li>Entorse: Torção ou distensão de uma articulação, com lesão de ligamentos.</li></ul><p>Conduta: NUNCA tente colocar ossos no lugar. Imobilize a articulação acima e abaixo da lesão e verifique o PMS (Pulso, Movimento, Sensibilidade) antes e depois.</p>` 
     },
     'module36': { 
-        id: "module36", 
-        title: "36. APH: Emergências Clínicas e Choque", 
-        iconClass: "fas fa-stethoscope", 
-        content: `<h4>36.1 Emergências Clínicas</h4>
-            <p>São estados graves de saúde não causados por fatores externos, mas sim por doenças pré-existentes.</p>
-            <ul>
-                <li><strong>Desmaio (Síncope):</strong> Perda transitória da consciência. A conduta é amparar a pessoa até que ela recobre a consciência, sem apressar que ela fique em pé.</li>
-                <li><strong>Convulsão:</strong> Contratura muscular involuntária. Pacientes podem apresentar palidez, respiração difícil, perda de consciência. A conduta é amparar a pessoa (proteger a cabeça) até que ela recobre a consciência.</li>
-                <li><strong>Infarto do Miocárdio:</strong> Necrose (morte) de uma parte do músculo cardíaco devido à obstrução de uma artéria.</li>
-                <li><strong>AVE (Acidente Vascular Encefálico):</strong> Interrupção da circulação cerebral (por coágulos ou hemorragia), causando necrose de parte do cérebro.</li>
-            </ul>
-            <p>Em todos os casos, o objetivo é levar o paciente ao hospital o quanto antes.</p>
+    id: "module36", 
+    title: "36. APH: Emergências Clínicas e Estado de Choque", 
+    iconClass: "fas fa-stethoscope", 
+    content: `
+<h3>36.1 O que são Emergências Clínicas</h3>
+<p>São situações em que o paciente apresenta um <strong>agravo interno à saúde</strong>, sem causa traumática externa, que coloca a vida em risco imediato. Ex.: Convulsões, síncope, AVC, infarto, descontrole glicêmico.</p>
 
-            <h4>36.2 Tipos de Choque (Falência Circulatória)</h4>
-            <div class="key-concept">
-                <h5>Choque Séptico (Septicemia)</h5>
-                <p>Surge quando uma infecção local chega ao sangue e se espalha pelo corpo. É mais frequente em pessoas com sistema imune enfraquecido. Sintomas incluem febre alta (>40°C), convulsões, respiração rápida e desmaio.</p>
-            </div>
-            <div class="key-concept">
-                <h5>Choque Anafilático</h5>
-                <p>Ocorre em pessoas com alergia grave (ex: nozes, picada de abelha). Causa uma resposta exagerada do sistema imune, inflamando o sistema respiratório. Sintomas incluem inchaço do rosto, dificuldade para respirar e sensação de "bola na garganta". Requer adrenalina (epinefrina).</p>
-            </div>
-            <div class="key-concept">
-                <h5>Choque Hipovolêmico</h5>
-                <p>Surge quando não há sangue suficiente para levar oxigênio aos órgãos vitais, geralmente após uma hemorragia grave (interna ou externa). Sintomas incluem pele pálida e fria, tonturas, náuseas e lábios azulados.</p>
-            </div>
-            <div class="key-concept">
-                <h5>Choque Cardiogênico</h5>
-                <p>Acontece quando o coração falha em bombear o sangue, sendo comum após um infarto, arritmias ou insuficiência cardíaca. Sintomas incluem palidez, batimentos cardíacos rápidos, pressão baixa e sonolência.</p>
-            </div>
-            <div class="key-concept">
-                <h5>Choque Neurogênico</h5>
-                <p>Ocorre por uma perda repentina dos sinais do sistema nervoso, comum em problemas graves no cérebro ou na medula espinhal. Sintomas incluem dificuldade para respirar, diminuição do batimento cardíaco, tonturas e dor no peito.</p>
-            </div>` 
-    },
+<hr>
+
+<h3>36.2 Síncope (Desmaio)</h3>
+<p>A síncope é uma <strong>perda rápida e temporária da consciência</strong>, geralmente por redução momentânea do fluxo sanguíneo cerebral.</p>
+
+<h4>Causas comuns:</h4>
+<ul>
+    <li>Calor excessivo ou ambiente fechado</li>
+    <li>Longo tempo em pé parado</li>
+    <li>Dor intensa, susto, estresse</li>
+    <li>Hipoglicemia (queda de açúcar no sangue)</li>
+    <li>Desidratação</li>
+</ul>
+
+<h4>Sinais:</h4>
+<ul>
+    <li>Tontura</li>
+    <li>Visão turva ou escurecendo</li>
+    <li>Suor frio</li>
+    <li>Pele pálida</li>
+</ul>
+
+<h4>Conduta do Socorrista:</h4>
+<ul>
+    <li>Amparar a vítima e deitá-la no chão</li>
+    <li><strong>Elevar as pernas</strong> (melhora retorno sanguíneo ao cérebro)</li>
+    <li>Afrouxar roupas apertadas / abrir ventilação</li>
+    <li>Não oferecer comida ou água imediatamente</li>
+</ul>
+
+<p><strong>Encaminhar ao hospital se:</strong> o desmaio durar mais de 1 minuto, houver dor no peito, falta de ar ou histórico cardíaco.</p>
+
+<hr>
+
+<h3>36.3 Convulsão</h3>
+<p>Convulsão é uma <strong>atividade elétrica anormal do cérebro</strong>, causando movimentos musculares involuntários.</p>
+
+<h4>Sinais Clássicos (Crise Tônico-Clônica):</h4>
+<ul>
+    <li>Queda súbita</li>
+    <li>Corpo rígido → tremores intensos</li>
+    <li>Salivação / possível mordedura da língua</li>
+    <li>Respiração irregular</li>
+    <li>Estado de confusão após a crise (período pós-ictal)</li>
+</ul>
+
+<h4>Conduta Correta:</h4>
+<ul>
+    <li><strong>Proteger a cabeça</strong> da vítima</li>
+    <li><strong>Afastar objetos</strong> ao redor</li>
+    <li><strong>NÃO colocar nada na boca</strong></li>
+    <li><strong>NÃO segurar</strong> os movimentos</li>
+    <li>Aguardar a crise cessar</li>
+</ul>
+
+<p>A maioria das crises dura <strong>30 segundos a 2 minutos</strong>.</p>
+
+<h4>Quando é Gravíssimo (Emergência):</h4>
+<p><strong>Estado de Mal Epiléptico</strong> = convulsão que dura &gt; 5 minutos ou quando há crises repetidas sem recuperação de consciência.</p>
+
+<p><strong>Nesse caso → Acione imediatamente SAMU 192.</strong></p>
+
+<hr>
+
+<h3>36.4 Epilepsia</h3>
+<p>Epilepsia é uma condição em que o paciente apresenta <strong>convulsões recorrentes</strong>. A convulsão é um evento; epilepsia é a doença.</p>
+
+<h4>Gatilhos comuns:</h4>
+<ul>
+    <li>Falta de sono</li>
+    <li>Álcool e drogas</li>
+    <li>Estresse emocional</li>
+    <li>Luzes piscantes em alguns casos</li>
+</ul>
+
+<p>Se o paciente já possui epilepsia e a crise foi igual às anteriores → <strong>Conforto e observação</strong>.</p>
+
+<p>Se foi a primeira crise na vida → <strong>Encaminhar para avaliação médica.</strong></p>
+
+<hr>
+
+<h3>36.5 Acidente Vascular Encefálico (AVE)</h3>
+<p>O <strong>AVE</strong> ocorre quando o fluxo de sangue para parte do cérebro é interrompido.</p>
+
+<h4>Sinais (Protocolo FAST):</h4>
+<ul>
+    <li><strong>Face:</strong> Assimetria na boca ou rosto</li>
+    <li><strong>Braço:</strong> Perda de força em um dos lados</li>
+    <li><strong>Fala:</strong> Dificuldade para falar ou frases confusas</li>
+    <li><strong>Tempo:</strong> Quanto antes o atendimento, maior a chance de recuperação</li>
+</ul>
+
+<p><strong>Conduta:</strong> Chamar SAMU 192 imediatamente.</p>
+
+<hr>
+
+<h3>36.6 Infarto Agudo do Miocárdio (IAM)</h3>
+<p>É a <strong>morte de parte do músculo cardíaco</strong> por falta de oxigênio.</p>
+
+<h4>Sinais:</h4>
+<ul>
+    <li>Dor no peito em aperto, podendo irradiar para braço esquerdo, mandíbula ou costas</li>
+    <li>Suor frio</li>
+    <li>Náuseas</li>
+    <li>Medo de morrer</li>
+</ul>
+
+<p><strong>Conduta:</strong> Acalmar, manter sentado, não deitar, acionar <strong>SAMU 192</strong>.</p>
+
+<hr>
+
+<h3>36.7 Estado de Choque</h3>
+<p><strong>Choque</strong> é quando os tecidos não recebem oxigênio suficiente.</p>
+
+<h4>Sinais Gerais:</h4>
+<ul>
+    <li>Pele pálida, fria e úmida</li>
+    <li>Pulso fraco e acelerado</li>
+    <li>Respiração rápida</li>
+    <li>Confusão ou agitação</li>
+</ul>
+
+<h4>Conduta:</h4>
+<ul>
+    <li>Controlar causa (ex: sangramento)</li>
+    <li>Deitar a vítima e elevar as pernas</li>
+    <li>Manter aquecimento corporal</li>
+    <li>Acionar SAMU 192</li>
+</ul>
+` 
+},
     'module37': { 
         id: "module37", 
         title: "37. APH: Situação com Múltiplas Vítimas (IMV)", 
@@ -1023,5 +1126,6 @@ for (let i = 1; i <= 59; i++) {
     questionSources[`module${i}`] = `module${i}-quiz.js`; 
 
 }
+
 
 
