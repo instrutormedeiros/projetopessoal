@@ -748,7 +748,7 @@ const moduleContent = {
                 <h5>Causas Comuns da Síncope</h5>
                 <p>Qualquer pessoa pode desmaiar. Algumas causas incluem:</p>
                 <ul>
-                    <li>Pressão Baixa (hipotensão), especialmente ao levantar-se rápido.</li>
+                    <li>Pressão baixa (hipotensão), especialmente ao levantar-se rápido.</li>
                     <li>Hipoglicemia (baixo nível de açúcar no sangue, ex: ficar mais de 4 horas sem comer).</li>
                     <li>Fatores Ambientais: Calor excessivo ou frio extremo.</li>
                     <li>Fatores Emocionais: Ansiedade, ataque de pânico, medo extremo (ex: de agulhas) ou dor muito forte.</li>
@@ -804,16 +804,15 @@ const moduleContent = {
                 </ol>
             </div>
             
-            <div class="warning-box" style="border-left-color: var(--primary); background-color: #fff5f5;">
-                <h5 style="color: var(--primary-dark);">O QUE NÃO FAZER:</h5>
-                <ul>
-                    <li><strong>NÃO tente conter os movimentos:</strong> Nunca segure os braços ou pernas da vítima.</li>
-                    <li><strong>NÃO puxe a língua:</strong> É um mito. A vítima não engole a língua. Tentar puxá-la pode causar lesões graves na sua mão (mordida) ou na boca da vítima.</li>
-                    <li><strong>NÃO coloque objetos na boca:</strong> Não insira dedos, panos, colheres ou qualquer objeto na boca da vítima. Isso pode quebrar dentes ou causar obstrução.</li>
-                    <li><strong>NÃO dê água ou medicação:</strong> A vítima está inconsciente e pode se afogar.</li>
+            <div class="warning-box" style="border-left-color: var(--primary); background-color: #fff5f5; color: #4A5568;">
+                <h5 style="color: #c53030;">O QUE NÃO FAZER:</h5>
+                <ul> 
+                    <li><strong style="color: #c53030;">NÃO tente conter os movimentos:</strong> Nunca segure os braços ou pernas da vítima.</li>
+                    <li><strong style="color: #c53030;">NÃO puxe a língua:</strong> É um mito. A vítima não engole a língua. Tentar puxá-la pode causar lesões graves na sua mão (mordida) ou na boca da vítima.</li>
+                    <li><strong style="color: #c53030;">NÃO coloque objetos na boca:</strong> Não insira dedos, panos, colheres ou qualquer objeto na boca da vítima. Isso pode quebrar dentes ou causar obstrução.</li>
+                    <li><strong style="color: #c53030;">NÃO dê água ou medicação:</strong> A vítima está inconsciente e pode se afogar.</li>
                 </ul>
             </div>
-
             <h4>36.5 Outras Emergências Graves</h4>
             <div class="key-concept" style="margin-bottom: 0.5rem;">
                 <h5>Infarto Agudo do Miocárdio (IAM)</h5>
@@ -1092,6 +1091,7 @@ for (let i = 1; i <= 59; i++) {
     questionSources[`module${i}`] = `module${i}-quiz.js`; 
 
 }
+
 
 
 
