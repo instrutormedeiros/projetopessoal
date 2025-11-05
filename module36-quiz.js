@@ -1,4 +1,4 @@
-/* === module36-quiz.js (Atualizado) === */
+/* === module36-quiz.js (Atualizado com Convulsão e Síncope) === */
 var questionBank = {
     'module36': [
         {
@@ -86,16 +86,52 @@ var questionBank = {
             explanation: 'O Choque Neurogênico ocorre por falha nos sinais do sistema nervoso, comum em lesões graves no cérebro ou medula.'
         },
         {
-            id: 'm36-q8',
-            question: 'Qual a conduta correta em casos de desmaios (síncope) ou convulsões?',
+            id: 'm36-q9', // Nova pergunta (baseada no PDF)
+            question: 'Qual é a conduta de primeiros socorros recomendada para uma pessoa que está prestes a desmaiar (síncope)?',
             options: {
-                a: 'Dar tapas no rosto para acordar a vítima.',
-                b: 'Amparar a pessoa até que ela recobre a consciência, sem pressa.',
-                c: 'Tentar forçar a vítima a ficar em pé imediatamente.',
-                d: 'Oferecer açúcar ou sal.'
+                a: 'Dar água com açúcar imediatamente.',
+                b: 'Deitá-la no chão e elevar suas pernas acima do nível do coração.',
+                c: 'Dar tapas leves no rosto para mantê-la acordada.',
+                d: 'Sentá-la e inclinar a cabeça para trás.'
             },
             answer: 'b',
-            explanation: 'O ideal é amparar a pessoa (proteger a cabeça na convulsão) até que ela recobre a consciência.'
+            explanation: 'Deitar a vítima e elevar as pernas ajuda a aumentar o fluxo sanguíneo para o cérebro, prevenindo ou revertendo o desmaio.'
+        },
+        {
+            id: 'm36-q10', // Nova pergunta (baseada no PDF)
+            question: 'Durante uma crise convulsiva, qual das seguintes ações NÃO deve ser realizada?',
+            options: {
+                a: 'Proteger a cabeça da vítima para evitar traumatismos.',
+                b: 'Tentar puxar a língua da vítima ou colocar objetos em sua boca.',
+                c: 'Afastar objetos perigosos (móveis) de perto da vítima.',
+                d: 'Lateralizar a cabeça da vítima (após os abalos) para evitar aspiração.'
+            },
+            answer: 'b',
+            explanation: 'Nunca se deve tentar puxar a língua ou colocar objetos na boca da vítima; isso pode causar lesões graves tanto no socorrista quanto na vítima.'
+        },
+        {
+            id: 'm36-q11', // Nova pergunta (baseada no PDF)
+            question: 'Qual é a principal diferença entre ter uma convulsão e ter epilepsia?',
+            options: {
+                a: 'Convulsão só acontece com febre, epilepsia não.',
+                b: 'Epilepsia é o diagnóstico dado quando a pessoa apresenta duas ou mais crises convulsivas recorrentes.',
+                c: 'Convulsão é mais grave que epilepsia.',
+                d: 'Epilepsia não causa movimentos de abalo, apenas ausência.'
+            },
+            answer: 'b',
+            explanation: 'Uma pessoa pode ter uma convulsão pontual. A epilepsia é uma disfunção crônica caracterizada por crises convulsivas recorrentes.'
+        },
+        {
+            id: 'm36-q12', // Nova pergunta (baseada no PDF)
+            question: 'O que é uma convulsão?',
+            options: {
+                a: 'Um distúrbio do coração que causa arritmia.',
+                b: 'Uma baixa de açúcar no sangue que causa fraqueza.',
+                c: 'Um distúrbio causado por atividade elétrica excessiva e anormal no cérebro.',
+                d: 'A perda de controle muscular que faz a pessoa cair.'
+            },
+            answer: 'c',
+            explanation: 'A convulsão é uma contratura muscular involuntária provocada por um aumento excessivo da atividade elétrica em áreas cerebrais.'
         }
     ]
 };
