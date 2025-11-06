@@ -734,8 +734,7 @@ const moduleContent = {
            id: "module36", 
         title: "36. APH: Emergências Clínicas", 
         iconClass: "fas fa-stethoscope", 
-        content: `
-            <p>Emergências clínicas são estados graves de saúde que não são causados por traumas externos, mas sim pelo agravamento de doenças ou condições internas do corpo.</p>
+        content: <p>Emergências clínicas são estados graves de saúde que não são causados por traumas externos, mas sim pelo agravamento de doenças ou condições internas do corpo.</p>
 
             <h4>36.1 Síncope (Desmaio)</h4>
             <div class="key-concept" style="margin-bottom: 0.5rem;">
@@ -833,7 +832,6 @@ const moduleContent = {
                 <li><strong>Choque Cardiogênico:</strong> Ocorre quando o coração falha como bomba (ex: após um infarto) e não consegue bombear o sangue.</li>
                 <li><strong>Choque Neurogênico:</strong> Ocorre por uma falha no sistema nervoso (ex: lesão na medula espinhal).</li>
             </ul>
-        ` 
     };
     'module37': { 
         id: "module37", 
@@ -1092,6 +1090,7 @@ for (let i = 1; i <= 59; i++) {
     questionSources[`module${i}`] = `module${i}-quiz.js`; 
 
 }
+
 
 
 
