@@ -731,10 +731,10 @@ const moduleContent = {
         content: `<h4>35.1 Queimaduras - Classificação por Profundidade:</h4><p>Lesão causada por temperaturas extremas, agentes químicos, eletricidade ou radiação.</p><ul><li>1º Grau: Atinge a epiderme; causa vermelhidão e dor.</li><li>2º Grau: Atinge a epiderme e a derme; forma bolhas e causa dor intensa.</li><li>3º Grau: Atinge todas as camadas da pele; aspecto esbranquiçado ou carbonizado, com pouca ou nenhuma dor.</li></ul><h4>35.2 Conduta Básica em Queimaduras</h4><ul><li>Interromper o processo (ex: resfriar com água corrente).</li><li>Remover roupas que não estejam grudadas e joias.</li><li>NÃO estourar bolhas nem aplicar produtos caseiros (pasta de dente, café).</li></ul><h4>35.3 Lesões Musculoesqueléticas</h4><ul><li>Fratura: Ruptura total ou parcial de um osso (Fechada ou Exposta).</li><li>Luxação: Deslocamento de um osso de sua articulação.</li><li>Entorse: Torção ou distensão de uma articulação, com lesão de ligamentos.</li></ul><p>Conduta: NUNCA tente colocar ossos no lugar. Imobilize a articulação acima e abaixo da lesão e verifique o PMS (Pulso, Movimento, Sensibilidade) antes e depois.</p>` 
     },
     'module36': { 
-            id: "module36", 
-            title: "36. APH: Emergências Clínicas", 
-            iconClass: "fas fa-stethoscope", 
-            content: `
+           id: "module36", 
+        title: "36. APH: Emergências Clínicas", 
+        iconClass: "fas fa-stethoscope", 
+        content: `
             <p>Emergências clínicas são estados graves de saúde que não são causados por traumas externos, mas sim pelo agravamento de doenças ou condições internas do corpo.</p>
 
             <h4>36.1 Síncope (Desmaio)</h4>
@@ -804,15 +804,16 @@ const moduleContent = {
                 </ol>
             </div>
             
-            <div class="warning-box" style="border-left-color: var(--primary); background-color: #fff5f5; color: #1a202c !important;">
-                <h5 style="color: #c53030 !important;">O QUE NÃO FAZER:</h5>
-                <ul style="color: #1a202c !important;"> 
-                    <li><strong style="color: #c53030 !important;">NÃO tente conter os movimentos:</strong> Nunca segure os braços ou pernas da vítima.</li>
-                    <li><strong style="color: #c53030 !important;">NÃO puxe a língua:</strong> É um mito. A vítima não engole a língua. Tentar puxá-la pode causar lesões graves na sua mão (mordida) ou na boca da vítima.</li>
-                    <li><strong style="color: #c53030 !important;">NÃO coloque objetos na boca:</strong> Não insira dedos, panos, colheres ou qualquer objeto na boca da vítima. Isso pode quebrar dentes ou causar obstrução.</li>
-                    <li><strong style="color: #c53030 !important;">NÃO dê água ou medicação:</strong> A vítima está inconsciente e pode se afogar.</li>
+            <div class="warning-box">
+                <h5>O QUE NÃO FAZER:</h5>
+                <ul> 
+                    <li><strong>NÃO tente conter os movimentos:</strong> Nunca segure os braços ou pernas da vítima.</li>
+                    <li><strong>NÃO puxe a língua:</strong> É um mito. A vítima não engole a língua. Tentar puxá-la pode causar lesões graves na sua mão (mordida) ou na boca da vítima.</li>
+                    <li><strong>NÃO coloque objetos na boca:</strong> Não insira dedos, panos, colheres ou qualquer objeto na boca da vítima. Isso pode quebrar dentes ou causar obstrução.</li>
+                    <li><strong>NÃO dê água ou medicação:</strong> A vítima está inconsciente e pode se afogar.</li>
                 </ul>
             </div>
+            
             <h4>36.5 Outras Emergências Graves</h4>
             <div class="key-concept" style="margin-bottom: 0.5rem;">
                 <h5>Infarto Agudo do Miocárdio (IAM)</h5>
@@ -833,7 +834,7 @@ const moduleContent = {
                 <li><strong>Choque Neurogênico:</strong> Ocorre por uma falha no sistema nervoso (ex: lesão na medula espinhal).</li>
             </ul>
         ` 
-        },
+    };
     'module37': { 
         id: "module37", 
         title: "37. APH: Situação com Múltiplas Vítimas (IMV)", 
@@ -1091,6 +1092,7 @@ for (let i = 1; i <= 59; i++) {
     questionSources[`module${i}`] = `module${i}-quiz.js`; 
 
 }
+
 
 
 
