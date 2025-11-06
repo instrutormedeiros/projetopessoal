@@ -730,11 +730,12 @@ const moduleContent = {
         iconClass: "fas fa-bone", 
         content: `<h4>35.1 Queimaduras - Classificação por Profundidade:</h4><p>Lesão causada por temperaturas extremas, agentes químicos, eletricidade ou radiação.</p><ul><li>1º Grau: Atinge a epiderme; causa vermelhidão e dor.</li><li>2º Grau: Atinge a epiderme e a derme; forma bolhas e causa dor intensa.</li><li>3º Grau: Atinge todas as camadas da pele; aspecto esbranquiçado ou carbonizado, com pouca ou nenhuma dor.</li></ul><h4>35.2 Conduta Básica em Queimaduras</h4><ul><li>Interromper o processo (ex: resfriar com água corrente).</li><li>Remover roupas que não estejam grudadas e joias.</li><li>NÃO estourar bolhas nem aplicar produtos caseiros (pasta de dente, café).</li></ul><h4>35.3 Lesões Musculoesqueléticas</h4><ul><li>Fratura: Ruptura total ou parcial de um osso (Fechada ou Exposta).</li><li>Luxação: Deslocamento de um osso de sua articulação.</li><li>Entorse: Torção ou distensão de uma articulação, com lesão de ligamentos.</li></ul><p>Conduta: NUNCA tente colocar ossos no lugar. Imobilize a articulação acima e abaixo da lesão e verifique o PMS (Pulso, Movimento, Sensibilidade) antes e depois.</p>` 
     },
-    'module36': { 
-           id: "module36", 
+'module36': { 
+        id: "module36", 
         title: "36. APH: Emergências Clínicas", 
         iconClass: "fas fa-stethoscope", 
-        content: `<p>Emergências clínicas são estados graves de saúde que não são causados por traumas externos, mas sim pelo agravamento de doenças ou condições internas do corpo.</p>
+        content: `
+            <p>Emergências clínicas são estados graves de saúde que não são causados por traumas externos, mas sim pelo agravamento de doenças ou condições internas do corpo.</p>
 
             <h4>36.1 Síncope (Desmaio)</h4>
             <div class="key-concept" style="margin-bottom: 0.5rem;">
@@ -831,8 +832,9 @@ const moduleContent = {
                 <li><strong>Choque Hipovolêmico:</strong> Causado pela perda de grande volume de sangue ou líquidos (ex: hemorragia grave).</li>
                 <li><strong>Choque Cardiogênico:</strong> Ocorre quando o coração falha como bomba (ex: após um infarto) e não consegue bombear o sangue.</li>
                 <li><strong>Choque Neurogênico:</strong> Ocorre por uma falha no sistema nervoso (ex: lesão na medula espinhal).</li>
-            </ul>`
-    };
+            </ul>
+        ` 
+    },
     'module37': { 
         id: "module37", 
         title: "37. APH: Situação com Múltiplas Vítimas (IMV)", 
@@ -1090,6 +1092,7 @@ for (let i = 1; i <= 59; i++) {
     questionSources[`module${i}`] = `module${i}-quiz.js`; 
 
 }
+
 
 
 
